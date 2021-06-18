@@ -1,0 +1,125 @@
+.register{
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input__useremail{
+    width: 40%;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px 0;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+}
+
+.input__userpassword{
+    width: 40%;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 15px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+}
+
+.input__useremail input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.input__userpassword input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.input__useremail input::placeholder{
+    color: #fff;
+}
+
+.input__userpassword input::placeholder{
+    color: #fff;
+}
+
+.input__username input::placeholder{
+    color: #fff;
+}
+
+.input__username{
+    width: 40%;
+    height: 3vh;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 10px;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+}
+
+.input__username input{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    margin-left: 10px;
+    color: #fff;
+}
+
+.button__containers{
+    margin: 20px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button__containers button{
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    background-color: #fff;
+    color: green;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button__containers p{
+    color: #fff;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    cursor: pointer;
+}
