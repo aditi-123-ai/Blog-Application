@@ -16,15 +16,14 @@ function BlogDetails() {
     const history = useHistory();
 
     const blogparse = JSON.parse(localStorage.getItem("blogData"));
-    console.log(blogparse);
 
-    const blogData = useSelector(state => state.Blog.blogData.blogData) || blogparse;
+    const blogData = useSelector(state => state.Blog.blogData?.blogData) || blogparse;
 
-    const blogId = useSelector(state => state.Blog.blogData.blogId) || localStorage.getItem("blogId");
+    const blogId = useSelector(state => state.Blog.blogData?.blogId) || localStorage.getItem("blogId");
 
     const userData = useSelector(state => state.User.user);
 
-    const timesAgo = moment(blogData.timestamp.toDate()).fromNow();
+    const TellTime = moment(blogData.timestamp?.toDate()).fromNow();
 
     const [comments, setComments] = useState([]);
 
@@ -127,7 +126,7 @@ function BlogDetails() {
             <div className="blogDetails__left">
                 <div className="blogDetails__left--header">
                     <h1>{blogData.username}</h1>
-                    <h3>{timesAgo}</h3>
+                    <h3>{TellTime}</h3>
                 </div>
                 <div className="blogDetails__left--blogArea">
                     <p>{blogData.blogValue}</p>
