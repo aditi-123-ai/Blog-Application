@@ -1,20 +1,21 @@
-import firebase from 'firebase';
-
-
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+import firebase from 'firebase/app';
+import { initializeApp } from 'firebase/app';
+// Add the Firebase products that you want to use
+import "firebase/auth";
+import "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyBwu8oP5BtJdks9qEAZ9P9kPf5U9bPCPR4",
-  authDomain: "blog-application-1.firebaseapp.com",
-  projectId: "blog-application-1",
-  storageBucket: "blog-application-1.appspot.com",
-  messagingSenderId: "132630956370",
-  appId: "1:132630956370:web:8c1e9e9e631b9935ce128b"
+  apiKey: "AIzaSyCufVPt01LzD0lgF4oGI-a-tyZe6fTijFg",
+  authDomain: "blog-1b24a.firebaseapp.com",
+  projectId: "blog-1b24a",
+  storageBucket: "blog-1b24a.appspot.com",
+  messagingSenderId: "56462452976",
+  appId: "1:56462452976:web:3c53ef31f1d9aad88dba35"
 };
 
-  const firebaseApp = firebase.initializeApp(firebaseConfig);
+const Firebase = firebase.initializeApp(firebaseConfig);
 
-  const db = firebaseApp.firestore();
-  const auth = firebaseApp.auth();
+  const db = Firebase.firestore();
+  const auth = Firebase.auth();
 
   export default db;
   export {auth} 
